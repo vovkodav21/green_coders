@@ -2,11 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Green Coders - About Us</title>
+    <title>About Us - Green Coders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("/static/bg.jpg");
+            background-size: cover;
+        }
+
+        nav {
+            background-color: mintcream;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: indigo;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #663399;
+        }
+
+        section {
+            text-align: center;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: indigo;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #663399;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>We are a team of experienced developers who are passionate about building high-quality websites for our clients.</p>
-    <p><a href="/services">View our services</a></p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>About Us</h1>
+        <p>Green Coders is a web development company that specializes in creating custom websites for businesses and individuals. We are a team of experienced developers who are passionate about delivering high-quality solutions to our clients.</p>
+        <p>Our mission is to help our clients grow their businesses by providing them with powerful and effective online platforms. We work closely with our clients to understand their unique needs and requirements, and we use the latest technologies and best practices to deliver solutions that meet and exceed their expectations.</p>
+        <p>At Green Coders, we are committed to excellence in everything we do. We believe that our success is measured by the success of our clients, and we are proud to have helped many businesses and individuals achieve their goals through our web development services.</p>
+        <a href="/contact" class="btn">Get in touch</a>
+    </section>
+    <footer>
+        <p>&copy; 2023 Green Coders. All rights reserved.</p>
+    </footer>
 </body>
 </html>

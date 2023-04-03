@@ -2,66 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Green Coders - Home</title>
+    <title>Green Coders - Custom Web Development Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <style>
         body {
             background-image: url("/static/bg.jpg");
             background-size: cover;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
         }
-        header {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            text-align: center;
+
+        nav {
+            background-color: mintcream;
+            padding: 10px 0;
         }
+
         nav ul {
-            list-style: none;
             margin: 0;
             padding: 0;
-        }
-        nav li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        nav li:last-child {
-            margin-right: 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        section {
-            padding: 50px;
+            list-style: none;
             text-align: center;
         }
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
         }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            line-height: 1.5;
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: indigo;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
+
+        nav ul li a:hover {
+            color: #663399;
+        }
+
+        .intro {
+            text-align: center;
+            color: white;
+            padding: 150px 0;
+        }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #fff;
-            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: indigo;
             border-radius: 5px;
             text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 14px;
             transition: background-color 0.3s ease;
         }
+
         .btn:hover {
-            background-color: #eee;
+            background-color: #663399;
         }
     </style>
 </head>
@@ -77,12 +76,10 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="intro">
         <h1>Welcome to Green Coders</h1>
-        <p>We are a web development company that specializes in building custom websites for businesses and individuals.</p>
-        <p>Our team of experienced developers can help you create a website that is tailored to your specific needs and requirements.</p>
-        <p>Whether you need a simple website to promote your business, or a complex e-commerce platform, we have the skills and expertise to deliver results.</p>
-        <p><a href="/about" class="btn">Learn more about us</a></p>
+        <p>At Green Coders, we specialize in creating custom websites for businesses and individuals. Our team of experienced developers uses the latest technologies and best practices to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+        <a href="/services" class="btn">View Our Services</a>
     </section>
     <footer>
         <p>&copy; 2023 Green Coders. All rights reserved.</p>
